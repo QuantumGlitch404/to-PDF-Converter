@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Converter Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="image.png" width="80px" height="80px" alt="Logo" class="logo">
+            <span>PDF Converter Pro</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#converter" class="btn-primary">Get Started</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Convert Images & Text to PDF</h1>
+            <p>Professional PDF conversion tools for all your needs</p>
+            <a href="#converter" class="btn-primary">Start Converting</a>
+        </div>
+    </section>
+
+    <!-- Converter Section -->
+    <section id="converter" class="converter">
+        <div class="converter-container">
+            <div class="converter-tabs">
+                <button class="tab-btn active" data-tab="image">Image to PDF</button>
+                <button class="tab-btn" data-tab="text">Text to PDF</button>
+            </div>
+
+            <div class="converter-content">
+                <!-- Image to PDF -->
+                <div class="tab-content active" id="image-converter">
+                    <div class="drop-zone">
+                        <span class="drop-zone-prompt">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drop your images here or click to upload</p>
+                        </span>
+                        <input type="file" accept="image/*" class="drop-zone-input" multiple>
+                    </div>
+                    <div class="image-preview"></div>
+                    <button class="btn-convert">Convert to PDF</button>
+                </div>
+
+                <!-- Text to PDF -->
+                <div class="tab-content" id="text-converter">
+                    <textarea placeholder="Enter or paste your text here..." class="text-input"></textarea>
+                    <div class="text-options">
+                        <select class="font-select">
+                            <option value="Arial">Arial</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Courier">Courier</option>
+                        </select>
+                        <select class="font-size">
+                            <option value="12">12pt</option>
+                            <option value="14">14pt</option>
+                            <option value="16">16pt</option>
+                        </select>
+                    </div>
+                    <button class="btn-convert">Convert to PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why Choose Our Converter</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Conversion</h3>
+                <p>Convert your files instantly with our optimized processing engine</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Secure</h3>
+                <p>Your files are automatically deleted after conversion</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-desktop"></i>
+                <h3>Cross-Platform</h3>
+                <p>Works on all devices and browsers</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Processing</h3>
+                <p>No software installation required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>PDF Converter Pro provides professional-grade conversion tools for businesses and individuals. Our
+                mission is to make document conversion simple, secure, and efficient.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>1M+</h3>
+                    <p>Users</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5M+</h3>
+                    <p>Conversions</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Uptime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>support@pdfconverterpro.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+918888999910</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-location-dot"></i>
+                    <p>Glitch City...123 - Matrix</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="image.png" width="80px" height="80px" alt="Logo" class="logo">
+                <span>PDF Converter Pro</span>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PDF Converter Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
